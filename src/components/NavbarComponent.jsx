@@ -10,7 +10,7 @@ const NavbarComponent = () => {
       <Navbar expand="lg"  style={{ backgroundColor: 'rgba(48, 113, 86, 0.2)' }}>
         <Container fluid>
           <Navbar.Brand>
-            <img src={logonav} alt='logo' style={{ marginLeft: '20%', width: '90px', height: '60px', paddingBottom: '10px' }} />
+            <img src={logonav} alt='logo' style={{ marginLeft: '10px', width: '90px', height: '60px', paddingBottom: '10px' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
