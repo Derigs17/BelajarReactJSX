@@ -1,8 +1,5 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+
+import { Navbar, Nav, Button, Container, Form } from 'react-bootstrap';
 
 import logosementara from '../images/logosementara.png';
 import logonav from '../images/logonav.png';
@@ -10,7 +7,7 @@ import logonav from '../images/logonav.png';
 const NavbarComponent = () => {
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary" >
+      <Navbar expand="lg"  style={{ backgroundColor: 'rgba(48, 113, 86, 0.2)' }}>
         <Container fluid>
           <Navbar.Brand>
             <img src={logonav} alt='logo' style={{ marginLeft: '20%', width: '90px', height: '60px', paddingBottom: '10px' }} />
@@ -23,7 +20,7 @@ const NavbarComponent = () => {
               <Nav.Link href="Informasi">Informasi</Nav.Link>
               <Nav.Link href="Konsultasi">Konsultasi</Nav.Link>
             </Nav>
-            <Form className="d-flex mb-2 mb-lg-0" style={{ marginRight: '20px' }}> {/* Tambahkan kelas mb-2 untuk memberikan margin bottom saat layar kecil */}
+            <Form className="d-flex mb-2 mb-lg-0" style={{ marginRight: '20px' }}>
               <Form.Control
                 type="search"
                 placeholder="Search"
