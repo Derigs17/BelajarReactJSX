@@ -1,4 +1,4 @@
-import {Container, Row , Col,Image,Button} from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
 
 
@@ -79,33 +79,33 @@ const TentangKami = () => {
 
                     </Col>
                     <Col sm className='isi3 mt-4 pt-4 d-flex flex-column align-items-center'>
-                            <img src={layanan3} alt='layanan2' className="mb-4" />
-                            <p style={{ textAlign: 'justify' }}>Kami memahami bahwa setiap tanaman hias memiliki kebutuhan dan tantangan unik.
-                                Oleh karena itu, kami menyediakan layanan untuk merawat tanaman hias.
-                            </p>
+                        <img src={layanan3} alt='layanan2' className="mb-4" />
+                        <p style={{ textAlign: 'justify' }}>Kami memahami bahwa setiap tanaman hias memiliki kebutuhan dan tantangan unik.
+                            Oleh karena itu, kami menyediakan layanan untuk merawat tanaman hias.
+                        </p>
                     </Col>
                 </Row>
             </Container >
             {/* ini akhiran layanan */}
-
+            {/* persi apk */}
             <Container fluid className='mt-4 pt-4'>
                 <Row className="justify-content-center align-items-center">
-                    <Col md lg={{span:5, offsite:1}} className='d-flex align-items-center '>
+                    <Col md lg={{ span: 5, offsite: 1 }} className='d-flex align-items-center '>
                         <Container >
                             <h3>Dapatkan Versi Aplikasi</h3>
                             <p style={{ textAlign: 'justify' }}>
-                            Optimalkan pengalaman pengguna Anda dengan mendapatkan versi aplikasi kami sekarang! 
-                            Dengan aplikasi kami, nikmati akses cepat, fitur eksklusif, dan pengalaman yang dioptimalkan, 
-                            memberikan Anda kontrol penuh atas perjalanan digital dilengkapi dengan fitur pengingat untuk 
-                            mengoptimalkan kebutuhan anda. unduh aplikasi kami sekarang!
+                                Optimalkan pengalaman pengguna Anda dengan mendapatkan versi aplikasi kami sekarang!
+                                Dengan aplikasi kami, nikmati akses cepat, fitur eksklusif, dan pengalaman yang dioptimalkan,
+                                memberikan Anda kontrol penuh atas perjalanan digital dilengkapi dengan fitur pengingat untuk
+                                mengoptimalkan kebutuhan anda. unduh aplikasi kami sekarang!
                             </p>
                             <Button variant="dark" size='lg'>
-                               <img src={gplay} alt="" />
-                               
+                                <img src={gplay} alt="" />
+
                             </Button>
                         </Container>
                     </Col>
-                    <Col md lg={{span:2, offsite:1}} >
+                    <Col md lg={{ span: 2, offsite: 1 }} >
                         <img
                             src={hape}
                             alt="Login Image"
@@ -114,6 +114,8 @@ const TentangKami = () => {
                     </Col>
                 </Row>
             </Container>
+            {/* persi apk */}
+
 
         </>
     )

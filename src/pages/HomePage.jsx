@@ -1,15 +1,23 @@
-import { Container, Row, Col, Button,Image } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image,Card,CardGroup} from 'react-bootstrap';
+
 
 import beranda1 from '../images/beranda1.png';
 import rencana1 from '../images/rencana1.png'
 import rencana2 from '../images/rencana2.png'
 import rencana3 from '../images/rencana3.png'
+import nutrisi from '../images/nutrisi.png'
+import gabung from '../images/gabung.png'
+import janda from '../images/jandabolong.png';
+import buttonwood from '../images/buttonwood.png';
+import peony from '../images/peony.png';
+import sepatu from '../images/bungasepatu.png';
+// import user from '../images/user.png'
 
 const HomePage = () => {
   return (
     <>
-
-      <Container fluid className='mt-4'>
+      {/* header */}
+      <Container fluid className='mt-4 mb-4'>
         <Row className="justify-content-center align-items-center">
 
           <Col md lg={{ span: 6, offset: 1 }} className='d-flex align-items-center'>
@@ -24,7 +32,7 @@ const HomePage = () => {
               <Button type="button" className="btn btn-secondary btn-custom" >Selengkapnya</Button>
             </Container>
           </Col>
-          <Col md lg={{span:4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
             <Image style={{ width: "90%", height: "90%" }}
               src={beranda1}
               alt="Login Image"
@@ -33,8 +41,9 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      {/* bagian 2 */}
-      <Container>
+      {/* header */}
+      {/* mulai rencana */}
+      <Container className='mt-5 mb-5'>
         <Row className="justify-content-center pt-5">
           <Col className='mt-4 pt-4 text-center'>
             <h2>Memulai Rencana Anda dengan benar</h2>
@@ -70,8 +79,96 @@ const HomePage = () => {
             </p>
           </Col>
         </Row>
-
       </Container >
+      {/* mulai rencana */}
+      {/* nutrisi */}
+      <Container fluid className='mt-6 pt-5 px-4 py-5 mb-6'>
+        <Row className="justify-content-center align-items-center">
+
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+            <Image src={nutrisi} style={{ width: "80%", height: "80%" }}
+              alt="gambar tunas" />
+          </Col>
+
+          <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center pt-5'>
+            <h3>Penuhi Nutrisi tanaman anda dengan baik</h3> <br />
+            <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat. <br />
+              2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. <br />
+              3. Pilih pupuk yang sesuai dengan jenis tanaman hias Anda. Pupuk umumnya mengandung tiga elemen utama: nitrogen (N), fosfor (P), dan kalium (K). <br />
+              4. Tentukan jadwal pemupukan yang konsisten sepanjang musim tumbuh. <br />
+              5. Pastikan tanaman menerima cukup air, karena nutrisi larut dalam air dan diserap oleh akar tanaman.</p>
+          </Col>
+        </Row>
+      </Container>
+      {/* nutrisi */}
+      {/* bergabung */}
+      <Container fluid className='mt-5 pt-5 px-4 py-5 mb-5'>
+        <Row className="justify-content-center align-items-center">
+
+          <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center'>
+            <h3>Bergabung bersama kami untuk merawat tanaman anda</h3> <br />
+            <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.<br />
+              2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  <br />
+              3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
+          </Col>
+          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+            <Image src={gabung} style={{ width: "80%", height: "80%" }}
+              alt="gambar kanan" />
+          </Col>
+        </Row>
+      </Container>
+      {/* bergabung */}
+
+      {/* artikel */}
+      <Container className='mb-4'>
+        <h3>Artikel</h3>
+      </Container>
+
+      <CardGroup className="mx-5 px-4 mb-4 pb-4">
+      <Card className="mb-3 mx-4">
+        <Card.Img src={janda}  />
+        <Card.Body>
+          <Card.Title>Janda Bolong (Monstera)</Card.Title>
+          <Card.Text>
+          Tanaman kekinian Monstera atau dikenal sebagai nama tanaman janda bolong menjadi 
+          tanaman hias unik yang berasal dari daerah tropis Amerika yang menjadikan banyak peminat di tahun ini.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
+      <Card className="mb-3 mx-4">
+        <Card.Img src={buttonwood} />
+        <Card.Body>
+          <Card.Title>Pohon Buttonwood</Card.Title>
+          <Card.Text>
+          Buttonwood adalah pohon yang bercabang rendah, berbatang banyak, semak, 
+          selalu hijau dengan tinggi rata-rata 35 kaki, dan sering dikaitkan dengan komunitas bakau.    
+          </Card.Text>
+        </Card.Body>
+      </Card>
+
+      <Card className="mb-3 mx-4">
+        <Card.Img src={peony}/>
+        <Card.Body>
+          <Card.Title>Bunga Peony</Card.Title>
+          <Card.Text>
+          Bunga peony merupakan salah satu tanaman hias yang berasal dari Asia, Eropa, 
+          dan Amerika Utara hingga Barat.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card className="mb-3 mx-4">
+        <Card.Img src={sepatu}/>
+        <Card.Body>
+          <Card.Title>Bunga Sepatu</Card.Title>
+          <Card.Text>
+          Bunga sepatu adalah tanaman yang kaya akan antioksidan. Antioksidan ini 
+          sangatlah baik untuk tubuh kita dan membantu dalam menangkal radikal bebas yang bisa.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </CardGroup>
+        {/* artikel */}
 
     </>
   )
