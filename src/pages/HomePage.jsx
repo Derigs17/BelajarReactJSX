@@ -13,7 +13,7 @@ const HomePage = () => {
         <Row className="justify-content-center align-items-center">
 
           <Col md lg={{ span: 6, offset: 1 }} className='d-flex align-items-center'>
-            <Container className="m-5">
+            <Container className="mt-5">
               <h1>Mulailah untuk Merawat Tanaman Hiasmu</h1><br />
               <p style={{ textAlign: 'justify' }}>
                 Selamat datang di Tanaman Hias, di mana setiap detik adalah perjalanan
@@ -24,7 +24,7 @@ const HomePage = () => {
               <Button type="button" className="btn btn-secondary btn-custom" >Selengkapnya</Button>
             </Container>
           </Col>
-          <Col md lg={{span:4, offset: 1 }} >
+          <Col md lg={{span:4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
             <Image style={{ width: "90%", height: "90%" }}
               src={beranda1}
               alt="Login Image"
