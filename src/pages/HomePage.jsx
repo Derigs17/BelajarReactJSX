@@ -90,7 +90,7 @@ const HomePage = () => {
               alt="gambar tunas" />
           </Col>
 
-          <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center pt-5'>
+          <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center pt-5'>
             <h3>Penuhi Nutrisi tanaman anda dengan baik</h3> <br />
             <p>1. Awasi tanaman Anda untuk tanda-tanda kekurangan nutrisi, seperti daun kuning atau pertumbuhan yang lambat. <br />
               2. Sebelum memberikan nutrisi tambahan, lakukan analisis tanah untuk mengetahui tingkat keasaman (pH) dan kandungan nutrisinya. <br />
@@ -105,13 +105,13 @@ const HomePage = () => {
       <Container fluid className='mt-5 pt-5 px-4 py-5 mb-5'>
         <Row className="justify-content-center align-items-center">
 
-          <Col md lg={{ span: 6, offset: 1 }} className=' align-items-center'>
+          <Col md lg={{ span: 5, offset: 1 }} className=' align-items-center'>
             <h3>Bergabung bersama kami untuk merawat tanaman anda</h3> <br />
             <p>1. Dapatkan informasi terbaru tentang tren tanaman hias, perawatan terbaru, dan inovasi di dunia Tanaman Hias.<br />
               2. Saling berbagi pengalaman dan pengetahuan dengan anggota komunitas lainnya. Tanyakan pertanyaan dan dapatkan jawaban dari mereka yang memiliki pengalaman serupa.  <br />
               3. Dapat berkonsultasi dengan ahli dalam bidang tanaman hias untuk menanyakan masalah tanaman hias anda.</p>
           </Col>
-          <Col md lg={{ span: 4, offset: 1 }} className='ml-md-5 mt-3 text-center' >
+          <Col md lg={{ span: 4, offset: 1 }} className=' mt-3 text-center px-2' >
             <Image src={gabung} style={{ width: "80%", height: "80%" }}
               alt="gambar kanan" />
           </Col>

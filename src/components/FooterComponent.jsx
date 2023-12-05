@@ -3,6 +3,7 @@ import { Card, Row, Col } from 'react-bootstrap';
 
 const FooterComponent = () => {
   return (
+    <>
     <Card className="Footer text-center text-white">
       <Card.Body>
         <Card.Title>Sistem Informasi Perawatan Tanaman Hias</Card.Title>
@@ -45,6 +46,7 @@ const FooterComponent = () => {
   &copy;{new Date().getFullYear()} Tanaman Hias
 </Card.Footer>
     </Card>
+    </>
   );
 }
 

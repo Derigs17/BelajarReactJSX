@@ -6,7 +6,7 @@ import logonav from '../images/logonav.png';
 
 const NavbarComponent = () => {
   return (
-    <div>
+    <>
       <Navbar expand="lg"  style={{ backgroundColor: 'rgba(48, 113, 86, 0.2)' }}>
         <Container fluid>
           <Navbar.Brand>
@@ -35,7 +35,7 @@ const NavbarComponent = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+      </>
   );
 };
 
