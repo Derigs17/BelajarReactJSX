@@ -6,12 +6,14 @@ import Informasi from './pages/Informasi'
 import Konsultasi from './pages/Konsultasi'
 
 import Login from './pages/Login'
-// import RegisterPage from './pages/RegisterPage'
+import Register from './pages/Register'
+
 // import UserProfile from './pages/UserProfile'
 
 
 import NavbarComponent from './components/NavbarComponent'
 import FooterComponent from './components/FooterComponent'
+
 
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
         <Route path='Konsultasi' element={<Konsultasi/>}/>
 
         <Route path="Login" element={<Login />} />
+        <Route path="Register" element={<Register />} />
       </Routes>
 
       {/* Menampilkan Footer hanya jika path tidak termasuk dalam excludePaths */}

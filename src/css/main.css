@@ -33,6 +33,21 @@ background-color:#34745C ;
   background-color: #34745C;
 }
 
+/* warna
+h1 044F1E
+button 34745C
+bacground login FBFBFB
+bacgorund isi FCFCFC
+
+tips and trik di informasi 34745C
+fotter 34745C */
 
 
-
+.image-login {
+  display: block;
+}
+@media (max-width: 767px) {
+  .image-login {
+    display: none;
+  }
+}
