@@ -17,6 +17,7 @@ const HomePage = () => {
   return (
     <>
       {/* header */}
+      <div>
       <Container fluid className='mt-4 mb-4'>
         <Row className="justify-content-center align-items-center">
 
@@ -41,8 +42,10 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
+      </div>
       {/* header */}
       {/* mulai rencana */}
+      <div>
       <Container className='mt-5 mb-5'>
         <Row className="justify-content-center pt-5">
           <Col className='mt-4 pt-4 text-center'>
@@ -80,6 +83,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container >
+      </div>
       {/* mulai rencana */}
       {/* nutrisi */}
       <Container fluid className='mt-6 pt-5 px-4 py-5 mb-6'>

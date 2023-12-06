@@ -17,11 +17,16 @@ const TentangKami = () => {
 
             {/* ini awal image header */}
             <Row>
-                <Col xs={12}>
-                    <Image style={{ width: "100%", height: "auto" }}
+                <Col >
+                    <Image style={{
+                        display: 'flex',
+                        alignItems: 'center',
+
+                    }}
                         src={tentangkami}
                         className="img-fluid"
                         alt="header image"
+
                     />
                 </Col>
             </Row>
